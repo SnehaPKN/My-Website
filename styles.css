@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('image/background.jpg'); /* ✅ Ensure correct path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #000;
+  text-align: center;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: transparent;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000; /* Black for visibility */
+  text-shadow: 1px 1px 2px #fff;
+}
+
+header p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000; /* Black for visibility */
+  text-shadow: 1px 1px 2px #fff;
+  margin-bottom: 2rem;
+}
+
+/* Get Started Button */
+button#getStartedBtn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #c2185b; /* Bold pink */
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button#getStartedBtn:hover {
+  transform: scale(1.1);
+}
+
+/* Services Section */
+#servicesSection {
+  margin-top: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Service Buttons */
+.service-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-btn {
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  background-color: #d81b60; /* Dark pink */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Services Title */
+.services-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  background-color: #c2185b; /* Deep pink */
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Services Box (two columns) */
+.services-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Each Service Section */
+.service {
+  background-color: #d81b60; /* Bold pink */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.service ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Dropdown Button */
+.dropdown-btn {
+  width: 100%;
+  background-color: #c2185b;
+  border: none;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  padding: 15px;
+  background-color: #f8bbd0;
+  color: #000;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #2d3e50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

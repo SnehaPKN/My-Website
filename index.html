@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shift & Style Co.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="main-heading">Welcome to Shift & Style Co.!</h1>
+    <p class="subtext">Hurry Up!!! Your One Step Shop for Moving and Makeup!</p>
+    <button id="getStartedBtn">Get Started</button>
+  </header>
+
+  <div id="servicesSection" class="hidden">
+    <div class="container">
+      <h2 class="services-title">Our Services</h2>
+      <div class="services-box">
+
+        <div class="service">
+          <button class="dropdown-btn">Shifting Services</button>
+          <div class="dropdown-content">
+            <ul>
+              <li>House Shifting (within 8 Parramatta Road)</li>
+              <li>Heavy lifting (only items from dumping areas no emotional baggage)</li>
+              <li>Work Setup relocation (we carry only items not stress)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service">
+          <button class="dropdown-btn">Parlour Services</button>
+          <div class="dropdown-content">
+            <ul>
+              <li>Hair Colour (only global and semi global)</li>
+              <li>Threading (only forehead and upper lips)</li>
+              <li>Skin and Hair Care Advice (Coz everyone deserves a little pampering!)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Shift & Style Co. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('getStartedBtn').addEventListener('click', function () {
+      document.getElementById('servicesSection').classList.remove('hidden');
+      this.style.display = 'none';
+    });
+
+    const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
